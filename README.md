@@ -177,6 +177,4 @@ This project demonstrates:
 
 ## Developed By
 
-**Vinodhini Y** 
-- B.C.A. Computer Application
-- K.C.S. Kasi Nadar Arts and Science College
+**Vinodhini Y**  - B.C.A. Computer Application - K.C.S. Kasi Nadar Arts and Science College
