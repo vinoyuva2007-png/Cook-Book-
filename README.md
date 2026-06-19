@@ -180,11 +180,3 @@ This project demonstrates:
 **Vinodhini Y**
 B.C.A. Computer Application
 K.C.S. Kasi Nadar Arts and Science College
-
----
-
-### Project Description (For Resume)
-
-**CookBook – Food Ordering Website**
-
-Developed a responsive food ordering web application using HTML, CSS, and JavaScript. Implemented restaurant browsing, cuisine-based filtering, menu management, shopping cart functionality, checkout process, and order tracking system. Designed an interactive user interface with dynamic content rendering and responsive layouts to enhance user experience.
