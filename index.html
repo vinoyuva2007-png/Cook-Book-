@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiffin — Order from the city's best kitchens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="dot"></span>Tiffin</div>
+    <div class="location-chip">📍 Delivering to <strong>Anna Nagar, Chennai</strong></div>
+    <div class="topbar-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search restaurants or dishes" aria-label="Search restaurants or dishes">
+    </div>
+    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+      🧾 Cart <span class="count" id="cartCount">0</span>
+    </button>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Order from 12 kitchens nearby</div>
+    <h1>Tonight's menu is written <em>somewhere else.</em><br>Bring it to your table.</h1>
+    <p>Real kitchens, real cooks, no surprises. Pick a place, build your ticket, and we'll punch it through to your door.</p>
+    <div class="ticket-rail" id="cuisineRail" role="tablist" aria-label="Filter by cuisine"></div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="section-head">
+    <h2 id="gridHeading">Open kitchens near you</h2>
+    <span class="meta" id="resultCount"></span>
+  </div>
+  <div class="restaurant-grid" id="restaurantGrid"></div>
+</div>
+
+<div class="footer-note">Tiffin is a demo marketplace. No real restaurants were bothered in the making of this page.</div>
+
+<!-- Menu Modal -->
+<div class="overlay" id="menuOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalRestName">
+    <div class="modal-header">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close menu">✕</button>
+      <h2 id="modalRestName">Restaurant</h2>
+      <div class="sub" id="modalRestMeta"></div>
+    </div>
+    <div class="modal-body" id="modalMenuItems"></div>
+  </div>
+</div>
+
+<!-- Cart Drawer -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">Your ticket</h2>
+    <button class="modal-close" id="closeDrawerBtn" aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
