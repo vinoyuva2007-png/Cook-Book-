@@ -1,9 +1,3 @@
-Based on your HTML and JavaScript files, your project is a **CookBook / Tiffin Food Ordering Website** that allows users to browse restaurants, view menus, add items to a cart, checkout, and track orders.
-
-You can use the following **README.md** content:
-
----
-
 # CookBook - Online Food Ordering Website
 
 ## 📌 Project Overview
